@@ -1,0 +1,141 @@
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+  padding-top: 60px;
+  padding-left: 220px;
+  background-color: #F5F7FF;
+}
+
+#main_road{
+  width: 100%;
+  min-height: 450px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+section#roadmap-list{
+  width: 100%;
+  min-height: 100px;
+}
+
+
+div#roadmaps{
+  width: 100%;
+  min-height: 150px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  background-color: #3757FF;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #7285e6;
+}
+
+button#create-roadmap{
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+button#delete-all-roadmaps{
+  position: absolute;
+  right: 180px;
+  top: 35px;
+}
+button#delete-selected-roadmaps{
+  position: absolute;
+  right: 330px;
+  top: 35px;
+}
+/* =================== 로드맵 추가내용 ==================== */
+div#roadmaps{
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+div#roadmaps>div{
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+div#roadmaps>div>input{
+  width: 20px;
+  height: 20px;
+  margin-right: 40px;
+}
+
+
+
+/* ============================================================= */
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#course-list>li>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#course-list>li>div>input{
+  width: 20px;
+  height: 20px;
+  margin-right: 40px;
+}
+#course-list>li>div>img{
+  width: 180px !important;
+  height: 100px !important;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+#course-list>li>div>a{
+  font: 500 20px "Noto Sans KR";
+  color: black;
+}
+
+#course-list>li>div>p{
+  font: 500 16px "Noto Sans KR";
+  color: #929292;
+  margin-right: 40px;
+}

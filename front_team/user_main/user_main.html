@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="/css/user_main.css" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js'></script>
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <sidebar-component></sidebar-component>
+    <section id="user_main">
+      <div id="top_wrap">
+        <section id="user_top">
+          <h2>추천 강의</h2>
+            <div class="swiper advice_swiper">
+              <div class="swiper-wrapper advice_swiper_inner">
+                <!-- 내용 들어감 -->
+              </div>
+              
+            </div>
+            <button class="swiper-button-next-1"><i class="fa-solid fa-caret-right"></i></button>
+            <button class="swiper-button-prev-1"><i class="fa-solid fa-caret-left"></i></button>
+            
+            <ul id="advice_page" class="swiper-pagination">
+              <!-- 페이지네이션 span -->
+            </ul>
+          </section>
+        </section>
+      </div>
+      <div id="main_wrap">
+          <section id="category_main">
+            <div id="announcement">
+              <h2>공지사항</h2>
+              <button>더보기</button>
+              <ul id="announcement_list">
+                <li>
+                  <div class="announcement_list_txt">
+                    <div class="announcement_hit1">
+                      공지
+                    </div>
+                    <a href="#">법정교육 미이수자에 대한 공지사항</a>
+                  </div>
+                  
+                  <p>2024-07-16</p>
+                </li>
+                <li>
+                  <div class="announcement_list_txt">
+                    <div class="announcement_hit2">
+                      안내
+                    </div>
+                    <a href="#">홈페이지 로딩 오류 관련 안내</a>
+                  </div>
+                  <p>2024-07-16</p>
+                </li>
+
+                <li>
+                  <div class="announcement_list_txt">
+                    <div class="announcement_hit2">
+                      안내
+                    </div>
+                    <a href="#">고객 상담 지연에 대한 안내</a>
+                  </div>
+                  <p>2024-07-17</p>
+                </li>
+                <li>
+                  <div class="announcement_list_txt">
+                    <div class="announcement_hit1">
+                      공지
+                    </div>
+                    <a href="#">직무교육 수료증 관련 문의 공지</a>
+                  </div>
+                  <p>2024-07-18</p>
+                </li>
+                <li>
+                  <div class="announcement_list_txt">
+                    <div class="announcement_hit2">
+                      안내
+                    </div>
+                    <a href="#">직무교육 관련 안내</a>
+                  </div>
+                  <p>2024-07-20</p>
+                </li>
+              </ul>
+            </div>
+            
+            <div id="go_kcc">
+              <h2>관련 기관</h2>
+              <div id="go_kcc_inner_wrap">
+                <div class="go_kcc_inner">
+                  <img src="/img/kcc1.png">
+                  <a href="https://main.kcc.co.kr/html/main.php"><button>KCC 정보통신 바로가기</button></a>
+                </div>
+                <div class="go_kcc_inner">
+                  <img src="/img/kcc2.png">
+                  <a href="https://kccdx.co.kr/"><button>DX BIZ GROUP 바로가기</button></a>
+                </div>
+              </div>
+              
+            </div>
+            
+          </section>
+      </div>
+      
+      
+      <section id="user_new" class="swiper mySwiper">
+        <h2>최신 강의</h2>
+        <div id="user_new_btn_wrap">
+          <button class="user_new_btn swiper-button-next"><i class="fa-solid fa-caret-right"></i></button>
+          <button class="user_new_btn swiper-button-prev"><i class="fa-solid fa-caret-left"></i></button>
+        </div>
+       
+        <ul id="user_new_list" class="swiper-wrapper">
+          <!-- Json 들어갈 부분 -->
+        </ul>
+      </section>
+      <!-- 광고바 -->
+      <section id="advertise">  
+        <h2>기술로 미래를 선도하는 글로벌 ICT 전문기업</h2>
+        <p>더 나은 내일을 만들기 위해 KCC정보통신은 오늘도 한 걸음 앞서 나아갑니다.</p>
+      </section>
+
+      <!-- 후기내용 들어갈 부분 -->
+       <section id="user_main_review">
+        <h2>주요 리뷰</h2>
+        <ul id="user_main_review_list">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+       </section>
+    </section>
+    
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/sidebar/sidebar.js"></script>
+    <script src="/js/user_main.js"></script>
+  </body>
+</html>

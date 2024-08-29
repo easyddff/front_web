@@ -1,0 +1,653 @@
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body{
+  padding-top: 60px;
+  padding-left: 220px;
+  background-color: #F5F7FF;
+  position: relative;
+}
+
+
+section#main{
+  width: 100%;
+  min-height: 2000px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+div#sub_detail_wrap{
+  width: 100%;
+  min-height: 1000px;
+  background: white;
+  border-radius: 15px;
+}
+section#sub_detail{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+div#sub_detail_top{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 40px 30px 50px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+div#sub_detail_txt{
+  width: 50%;
+  height: 200px;
+}
+div#sub_detail_txt>p{
+  margin-bottom: 20px;
+}
+p.sub_detail_title{
+  font: 600 30px "Noto Sans KR";
+  color: white;
+}
+p.sub_detail_sub_title{
+  font: 500 18px "Noto Sans KR";
+  color: #bcbcbc;
+}
+p.sub_detail_sub{
+  font: 500 16px "Noto Sans KR";
+  color: white;
+}
+div#sub_detail_top>img{
+  width: 30%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* =====================디테일메뉴==================== */
+div#sub_detail_menu{
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px #cccccc;
+  margin-bottom: 60px;
+}
+div#sub_detail_menu>ul{
+  width: 20%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div#sub_detail_menu>ul>li{
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  font: 500 15px "Noto Sans KR";
+}
+div#sub_detail_menu>ul>li.selector{
+  border-bottom: solid 3px #3757FF;
+  font: 600 17px "Noto Sans KR";
+}
+
+
+
+h2.sub_in_title{
+  font: 700 18px "Noto Sans KR";
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+/* =====================상세보기==================== */
+div#course_introduction{
+  margin-bottom: 40px;
+}
+div#course_introduction_in1{
+  width: 100%;
+  min-height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+p.sub_in_title2{
+  font: 600 16px "Noto Sans KR";
+}
+p.sub_in_title2_detail{
+  font: 400 15px "Noto Sans KR";
+}
+p.sub_in_title2_detail>i{
+  color: rgb(0, 168, 0);
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=====================커리큘럼=====================*/
+div#curriculum{
+  width: 100%;
+  min-height: 50px;
+  border-radius: 5px;
+  border: solid 2px #cccccc;
+  margin-bottom: 70px;
+}
+/* .sub_detail_in_list_wrap{
+  min-height: 80px;
+} */
+
+button.sub_detail_in_txt_title>p{
+  font: 600 16px "Noto Sans KR";
+  margin-bottom: 0;
+}
+ul.sub_detail_in_list{
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+ul.sub_detail_in_list>li{
+  width: 100%;
+  height: 60px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  border-bottom: solid 1px #cccccc;
+}
+ul.sub_detail_in_list>li>a{
+  font: 500 16px "Noto Sans KR";
+  color: #bcbcbc;
+}
+
+
+/* =====================버튼====================  */
+div#sub_detail_in{
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div#sub_detail_in_txt{
+  width: 70%;
+  min-height: 500px;
+}
+div#course_request{
+  width: 25%;
+  height: 200px;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  padding: 30px 70px;
+  box-sizing: border-box;
+  box-shadow: 5px 9px 20px rgba(0,0,0,0.1);
+}
+div#course_request>button{
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  font: 600 18px "Noto Sans KR";
+}
+button#req_btn{
+  border: solid 2px #3757FF;
+  margin-bottom: 20px;
+}
+button#req_btn:hover{
+  background-color: #3757FF;
+  color: white;
+}
+button#wish_btn{
+  border: solid 2px rgb(255, 42, 42);
+}
+button#wish_btn:hover{
+  background-color: rgb(255, 42, 42);
+  color: white;
+}
+
+
+
+/* =====================리뷰====================  */
+div#review_wrap{
+  width: 100%;
+  min-height: 100px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div#review_bar{
+  width: 60%;
+  min-height: 200px;
+  margin-right: 10px;
+}
+div.progress{
+  margin-bottom: 30px;
+}
+p.review_point_bar{
+  font: 500 12px "Noto Sans KR";
+  margin-bottom: 10px;
+}
+
+div#review_point{
+  width: 35%;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  box-shadow: 5px 9px 20px rgba(0,0,0,0.1);
+}
+div#review_insert_wrap{
+  width: 100%;
+  min-height: 100px;
+  margin-top: 30px;
+  
+}
+div#review_insert{
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  text-align: center;
+  font: 500 15px "Noto Sans KR";
+  line-height: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+div#review_all_btn_wrap{
+  width: 100%;
+  height: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px 0 50px 0;
+  box-sizing: border-box;
+}
+button#review_insert_btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: white;
+  border: solid 1px #cccccc;
+  font: 600 18px "Noto Sans KR";
+  color: #3757FF;
+}
+button#review_insert_btn:hover{
+  background: #3757FF;
+  color: white;
+}
+button#review_more_btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background: white;
+  border: solid 1px #cccccc;
+  font: 600 18px "Noto Sans KR";
+  color: #3757FF;
+}
+button#review_more_btn:hover{
+  background: #3757FF;
+  color: white;
+}
+
+
+/* ===============리뷰내용================ */
+div#review_text_wrap{
+  width: 100%;
+  min-height: 40px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: solid 1px #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+div#review_text_user{
+  width: 15%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+div#review_text_user>div{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #0F2027;
+}
+div#review_text_user>p{
+  line-height: 30px;
+  font: 500 15px "Noto Sans KR";
+  margin-top: 3px;
+}
+div#review_text_in{
+  width: 100%;
+  min-height: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.review-rating{
+  width: 20%;
+  min-height: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  /* margin-left: -50px; */
+}
+.review-rating>i{
+  color:#f39c12;
+}
+#review_text_in>p{
+  text-align: left;
+}
+p#review_point{
+  font: 500 14px "Noto Sans KR";
+  color: #888;
+  margin-bottom: 20px;
+}
+/* ==================모달 스타일링================ */
+#reviewModal {
+  display: none; /* 기본적으로 표시되지 않음 */
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.review_content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.modal-content>span{
+  float: left;
+}
+.modal-content>h2{
+  font: 600 30px "Noto Sans KR";
+  /* margin-bottom: 20px; */
+  float: left;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+div#star_wrap{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.star-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ccc;
+}
+
+/* Hover 상태에서 별점의 스타일을 업데이트합니다. */
+.star-button:hover,
+.star-button.hover {
+  color: #f39c12; /* 별이 선택되거나 호버 상태일 때의 색상 */
+}
+
+/* 클릭된 상태 또는 선택된 별의 상태를 유지합니다. */
+.star-button.selected,
+.star-button.selected:hover {
+  color: #f39c12;
+}
+
+/* 아이콘의 기본 상태 */
+.star-button i.fa-solid {
+  color: #f39c12; /* 별이 선택되거나 호버 상태일 때의 색상 */
+}
+
+.star-button i.fa-regular {
+  color: #ccc; /* 기본 상태의 색상 */
+}
+
+/* =======================전체리뷰보기======================= */
+#reviewModal2 {
+  display: none; /* 기본적으로 표시되지 않음 */
+  position: fixed;
+  z-index: 100;
+  left: 120px;
+  top: 0;
+  width: 100%;
+  min-height: 100px;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+#review_all_in{
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  min-height: 100px;
+  border-radius: 10px;
+}
+#review_all_txt{
+  width: 100%;
+  min-height: 100px;
+}
+#review_all_in>span{
+  float: left;
+}
+#review_all_in>h2{
+  font: 600 30px "Noto Sans KR";
+  /* margin-bottom: 20px; */
+  float: left;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+textarea#reviewText{
+  width: 100%;
+  height: 300px;
+  background: #eeeeee;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+button#submitReview{
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px #cccccc;
+  background: white;
+  font: 600 18px "Noto Sans KR";
+  color: #3757FF;
+}
+button#submitReview:hover{
+  background: #3757FF;
+  color: white;
+}
+/* --------------------연관 강의------------------- */
+div#user_new_list_wrap{
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background: #cccccc;
+  border: solid 1px #cccccc;
+  box-shadow: 5px 9px 20px rgba(0,0,0,0.1);
+}
+div#user_new_btn_wrap{
+  width: 120px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  left: 44%;
+  bottom: 10px;
+}
+button.user_new_btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #3757FF;
+  border: none;
+}
+button.user_new_btn>i{
+  font-size: 20px;
+  color: white;
+}
+.swiper-button-next::after{
+  display: none;
+}
+.swiper-button-prev::after{
+  display: none;
+}
+ul#user_new_list{
+  /* width: 100%; */
+  height: 100%;
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; */
+  padding-left: 0;
+  box-sizing: border-box;
+  margin-top: 10px;
+  
+}
+ul#user_new_list>li{
+  width: 230px;
+  height: 300px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  float: left;
+  margin-right: 30px;
+}
+ul#user_new_list>li img{
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== */
+
+#review_point>p{
+  font: 600 25px "Noto Sans KR";
+  text-align: center;
+}
+#review_point>.stars{
+  width: 70%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#review_point>.stars>i{
+  font-size: 30px;
+  color: #f39c12;
+}
+
+/* =============================== */
+#review_all_title{
+  margin-top: 10px;
+  position: relative;
+}
+#review_all_title>p{
+  font: 600 18px "Noto Sans KR";
+  float: left;
+}
+#review_all_title>.stars{
+  width: 10%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: left;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 33%;
+}
+#review_all_title>.stars>i{
+  font-size: 18px;
+  color: #f39c12;
+}
+.review_search{
+  position: absolute;
+  right: 0;
+  top: -13px;
+}

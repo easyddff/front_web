@@ -1,0 +1,12 @@
+li{
+  list-style: none;
+}
+
+body{
+  padding-top: 80px;
+  padding-left: 270px;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="/css/road_map.css">
+</head>
+<body>
+    <sidebar-component></sidebar-component>
+    <section id="main_road">
+      
+        <section id="roadmap-list">
+          <h2>나의 로드맵</h2>
+            <button id="delete-selected-roadmaps">선택한 로드맵 삭제</button>
+            <button id="delete-all-roadmaps">전체 로드맵 삭제</button>
+            <button id="create-roadmap">새로운 로드맵 생성</button>
+            <div id="roadmaps"></div>
+        </section>
+        <section id="roadmap-details" style="display:none;">
+            <h2>로드맵 자세히보기</h2>
+            <button id="back-to-list">로드맵 리스트로 돌아가기</button>
+            <button id="add-course">새로 추가하기</button>
+            <button id="delete-selected-courses">선택한 강좌 삭제</button>
+            <button id="delete-all-courses">전체 삭제</button>
+            <ul id="course-list"></ul>
+        </section>
+    </section>
+    <script src="/sidebar/sidebar.js"></script>
+    <script src="/js/road_map.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</body>
+</html>
